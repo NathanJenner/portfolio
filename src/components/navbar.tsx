@@ -1,7 +1,4 @@
-import { Button } from "@heroui/button";
-import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
-import { Input } from "@heroui/input";
 import {
   Navbar as HeroUINavbar,
   NavbarBrand,
@@ -16,14 +13,9 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  GithubIcon,
-  SearchIcon,
-} from "@/components/icons";
-import { Logo } from "@/components/icons";
+import { GithubIcon } from "@/components/icons";
 
 export const Navbar = () => {
-
   return (
     <HeroUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -32,10 +24,7 @@ export const Navbar = () => {
             className="flex justify-start items-center gap-1"
             color="foreground"
             href="/"
-          >
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
-          </Link>
+          />
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
