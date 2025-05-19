@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
+import CardBase from "@/components/card/card";
 
 export default function IndexPage() {
   return (
@@ -32,7 +33,6 @@ export default function IndexPage() {
               radius: "full",
               variant: "shadow",
             })}
-            href={siteConfig.links.docs}
           >
             Documentation
           </Link>
@@ -46,11 +46,14 @@ export default function IndexPage() {
           </Link>
         </div>
 
+        <div>
+            <CardBase />
+        </div>
+
         <div className="mt-8">
           <Snippet hideCopyButton hideSymbol variant="bordered">
             <span>
-              Get started by editing{" "}
-              <Code color="primary">pages/index.tsx</Code>
+              Powered by <Code color="success">curiosity/learning.tsx</Code>
             </span>
           </Snippet>
         </div>
