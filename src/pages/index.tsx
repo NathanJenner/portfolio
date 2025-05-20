@@ -46,7 +46,7 @@ export default function IndexPage() {
           </Link>
         </div>
 
-        <div>
+        <div id="myProjects">
           <CardBase />
         </div>
 
