@@ -1,5 +1,6 @@
 import { Card, CardBody, CardFooter, Image } from "@heroui/react";
 
+
 export default function CardBase() {
   const list = [
     {
@@ -95,7 +96,7 @@ export default function CardBase() {
           width="100%"
         />
         </CardBody>
-        <CardFooter className="text-medium justify-between items-center">
+        <CardFooter className="text-medium justify-center">
         <b>{item.title}</b>
         </CardFooter>
       </Card>
