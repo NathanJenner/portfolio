@@ -47,7 +47,7 @@ export default function IndexPage() {
         </div>
 
         <div>
-            <CardBase />
+          <CardBase />
         </div>
 
         <div className="mt-8">
