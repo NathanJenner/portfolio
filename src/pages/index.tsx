@@ -84,9 +84,15 @@ export default function IndexPage() {
           </div>
         </section>
 
-        <section>
-          <div id="myProjects">
+        <section id="myProjects">
+          <div>
             <CardBase />
+          </div>
+        </section>
+
+        <section>
+          <div className="inline-block max-w-xl text-center justify-center mt-24">
+            <span className={title({ color: "violet" })}>Skills&nbsp;</span>
           </div>
         </section>
 
