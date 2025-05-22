@@ -8,6 +8,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import CardBase from "@/components/card/card";
+import SkillButton from "@/components/skillbutton/skillbutton";
 
 export default function IndexPage() {
   return (
@@ -95,7 +96,7 @@ export default function IndexPage() {
             <span className={title({ color: "violet" })}>Skills&nbsp;</span>
           </div>
         </section>
-
+<SkillButton />
         <section>
           <div className="mt-8">
             <Snippet hideCopyButton hideSymbol variant="bordered">

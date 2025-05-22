@@ -13,6 +13,9 @@ export default function SkillButton() {
   ];
   return (
     <div className="flex gap-4 items-center">
+      {list.map((item, index) => (
+        <Button key={index} />
+      ))}
       <Button size="sm">Small</Button>
       <Button size="md">Medium</Button>
       <Button size="lg">Large</Button>
