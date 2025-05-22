@@ -49,16 +49,5 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/NathanJenner",
-  },
-  skills:
-    [
-      {label: "C#"},
-      {label: "TypeScript"},
-      {label: ".NET"},
-      {label: "JavaScript"},
-      {label: "React"},
-      {label: "GitHub"},
-      {label: "SDLC"},
-      {label: "SQL"},
-    ]
+  }
 };
