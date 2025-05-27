@@ -10,6 +10,7 @@ export default function SkillButton() {
     { label: "GitHub" },
     { label: "SDLC" },
     { label: "SQL" },
+    { label: "Node.js" },
   ];
   return (
     <div className="flex gap-4 items-center">
