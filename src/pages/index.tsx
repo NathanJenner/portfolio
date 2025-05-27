@@ -96,7 +96,13 @@ export default function IndexPage() {
             <span className={title({ color: "violet" })}>Skills&nbsp;</span>
           </div>
         </section>
-<SkillButton />
+
+        <section>
+          <div className="inline-block max-w-md text-center justify-center">
+          <SkillButton />
+          </div>
+        </section>
+
         <section>
           <div className="mt-8">
             <Snippet hideCopyButton hideSymbol variant="bordered">

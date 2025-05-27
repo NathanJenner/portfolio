@@ -12,14 +12,12 @@ export default function SkillButton() {
     { label: "SQL" },
     { label: "Node.js" },
   ];
+
   return (
     <div className="flex gap-4 items-center">
       {list.map((item, index) => (
-        <Button key={index} />
+        <Button key={index} disabled>{item.label}</Button>
       ))}
-      <Button size="sm">Small</Button>
-      <Button size="md">Medium</Button>
-      <Button size="lg">Large</Button>
     </div>
   );
 }
