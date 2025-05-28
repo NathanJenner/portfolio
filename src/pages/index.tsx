@@ -98,7 +98,7 @@ export default function IndexPage() {
         </section>
 
         <section>
-          <div className="inline-block max-w-md text-center justify-center">
+          <div>
           <SkillButton />
           </div>
         </section>

@@ -14,9 +14,11 @@ export default function SkillButton() {
   ];
 
   return (
-    <div className="flex gap-4 items-center">
+    <div className="gap-4 grid grid-cols-2 sm:grid-cols-4">
       {list.map((item, index) => (
-        <Button key={index} disabled>{item.label}</Button>
+        <Button key={index} disabled>
+          {item.label}
+        </Button>
       ))}
     </div>
   );
