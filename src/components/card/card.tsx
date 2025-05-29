@@ -7,13 +7,13 @@ export default function CardBase() {
       title: "Math Game",
       img: "/images/fruit-1.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/CSharp-Academy_Math_Game",
     },
     {
       title: "Calculator",
       img: "/images/fruit-2.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/Calculator_Console_App",
     },
     {
       title: "Habit Logger",
