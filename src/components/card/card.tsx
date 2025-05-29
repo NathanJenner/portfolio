@@ -49,13 +49,13 @@ export default function CardBase() {
       title: "Shifts Logger",
       img: "/images/fruit-8.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/ShiftsLogger.NathanJenner",
     },
     {
       title: "Exercise Tracker",
       img: "/images/fruit-5.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/ExerciseTracker.NathanJenner",
     },
     {
       title: "Sports Notifier",
