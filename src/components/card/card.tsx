@@ -61,31 +61,31 @@ export default function CardBase() {
       title: "Sports Notifier",
       img: "/images/fruit-6.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/Sports.Results.Notifier.NathanJenner",
     },
     {
       title: "Excel Reader",
       img: "/images/fruit-7.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/ExcelReader.NathanJenner",
     },
     {
       title: "Unit Testing",
       img: "/images/fruit-8.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/UnitTests.NathanJenner",
     },
     {
       title: "Drink Tracker",
       img: "/images/fruit-7.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/WaterLogger.NathanJenner",
     },
     {
       title: "Movie Catalog",
       img: "/images/fruit-8.jpeg",
       desc: "xzx",
-      url: "",
+      url: "https://github.com/NathanJenner/MVC.Movies.NathanJenner",
     },
   ];
 
