@@ -93,12 +93,8 @@ export default function CardBase() {
     <div className="gap-8 grid grid-cols-2 sm:grid-cols-4 max-w-[900px]">
       {list.map((item, index) => (
         /* eslint-disable no-console */
-        <Card
-          key={index}
-          isPressable
-          shadow="sm"
-          onPress={() => console.log("item pressed")}
-        >
+        <Card key={index} isPressable shadow="sm" onPress={() => console.log("sasa")}>
+          <a href={item.url}>
           <CardBody className="overflow-visible p-0">
             <Image
               alt={item.title}
@@ -112,6 +108,7 @@ export default function CardBase() {
           <CardFooter className="text-medium justify-center">
             <b>{item.title}</b>
           </CardFooter>
+          </a>
         </Card>
       ))}
     </div>
