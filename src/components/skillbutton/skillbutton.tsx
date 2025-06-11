@@ -11,6 +11,12 @@ export default function SkillButton() {
     { label: "SDLC" },
     { label: "SQL" },
     { label: "Node.js" },
+    { label: "Unit Testing" },
+    { label: "APIs" },
+    { label: "Azure" },
+
+
+
   ];
 
   return (

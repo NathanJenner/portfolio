@@ -87,6 +87,12 @@ export default function CardBase() {
       desc: "xzx",
       url: "https://github.com/NathanJenner/MVC.Movies.NathanJenner",
     },
+    {
+      title: "Tic-Tac-Toe",
+      img: "15.png",
+      desc: "xzx",
+      url: "https://github.com/NathanJenner/React-Tic-Tac-Toe",
+    },
   ];
 
   return (
