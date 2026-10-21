@@ -1,4 +1,4 @@
-import { Card, CardBody, CardFooter, Image } from "@heroui/react";
+import { Card } from "@heroui/react";
 
 
 export default function CardBase() {
@@ -98,22 +98,18 @@ export default function CardBase() {
   return (
     <div className="gap-8 grid grid-cols-2 sm:grid-cols-4 max-w-[900px]">
       {list.map((item, index) => (
-        /* eslint-disable no-console */
-        <Card key={index} isPressable shadow="sm" onPress={() => console.log("sasa")}>
+        <Card key={index}>
           <a href={item.url}>
-          <CardBody className="overflow-visible p-0">
-            <Image
-              alt={item.title}
-              className="w-full object-cover h-[140px]"
-              radius="lg"
-              shadow="sm"
-              src={item.img}
-              width="100%"
-            />
-          </CardBody>
-          <CardFooter className="text-medium justify-center">
-            <b>{item.title}</b>
-          </CardFooter>
+            <Card.Content className="overflow-visible p-0">
+              <img
+                alt={item.title}
+                className="w-full object-cover h-[140px] rounded-lg"
+                src={item.img}
+              />
+            </Card.Content>
+            <Card.Footer className="text-medium justify-center">
+              <b>{item.title}</b>
+            </Card.Footer>
           </a>
         </Card>
       ))}
