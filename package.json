@@ -8,9 +8,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint --fix",
-    "preview": "vite preview",
-    "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@heroui/button": "2.2.32",
@@ -58,13 +56,10 @@
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.1.1",
     "eslint-plugin-unused-imports": "4.4.1",
-    "gh-pages": "^6.3.0",
     "globals": "17.13.0",
     "postcss": "8.5.31",
     "prettier": "3.9.10",
     "typescript": "6.0.3",
-    "vite": "8.3.4",
-    "vite-plugin-gh-pages": "^1.0.1",
-    "vite-tsconfig-paths": "6.1.1"
+    "vite": "8.3.4"
   }
 }
