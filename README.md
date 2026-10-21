@@ -1,29 +1,29 @@
-# Vite & HeroUI Template
+# Nathan Jenner – Developer Portfolio
 
-This is a template for creating applications using Vite and HeroUI (v2).
-
-[Try it on CodeSandbox](https://githubbox.com/frontio-ai/vite-template)
+Source for my developer portfolio, live at <https://nathanjenner.github.io/>.
+It is a single-page React site with an "About me" section and a list of
+projects and skills.
 
 ## Technologies Used
 
+- [React](https://react.dev) and [React Router](https://reactrouter.com)
+- [TypeScript](https://www.typescriptlang.org)
 - [Vite](https://vitejs.dev/guide/)
 - [HeroUI](https://heroui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS](https://tailwindcss.com) and [Tailwind Variants](https://tailwind-variants.org)
 - [Framer Motion](https://www.framer.com/motion)
 
-## How to Use
+## Getting Started
 
-To clone the project, run the following command:
+Clone the repository:
 
 ```bash
-git clone https://github.com/frontio-ai/vite-template.git
+git clone https://github.com/NathanJenner/NathanJenner.github.io.git
+cd NathanJenner.github.io
 ```
 
-### Install dependencies
-
-Use Node.js 24 and npm with the committed lockfile:
+Use Node.js 24 (the version used by the deployment workflow) and npm with the
+committed `package-lock.json`:
 
 ```bash
 npm ci
@@ -35,7 +35,7 @@ npm ci
 npm run dev
 ```
 
-### Build and publish to GitHub Pages
+### Lint, build, and preview
 
 ```bash
 npm run lint -- --no-fix
@@ -43,36 +43,33 @@ npm run build
 npm run preview
 ```
 
-Vite compiles the application into `dist`. GitHub Pages must serve that
-directory's contents, not the source `index.html`. Keep `base: "/"` in
-`vite.config.ts`: this is a user site at <https://nathanjenner.github.io/>,
-not a project site under `/portfolio/`.
+`npm run lint` runs ESLint with `--fix` by default; `-- --no-fix` makes it
+check only. `npm run build` type-checks with `tsc` and then builds the site
+into `dist`.
 
-1. In the repository's **Settings → Pages → Build and deployment**, set
-   **Source** to **GitHub Actions**, replacing the old `gh-pages` branch source.
-2. Ensure the `github-pages` environment permits deployments from `main`
-   (**Settings → Environments → github-pages**).
-3. Merge the deployment workflow and lockfile into `main`. The **Build and
-   deploy GitHub Pages** workflow installs, lints, builds, and publishes `dist`
-   automatically on pushes to `main`. It can also be run manually from the
-   **Actions** tab on `main`.
+## Project Structure
 
-Other branches and pull requests are built and linted without publishing.
-The workflow uses GitHub's built-in token; no personal access token is needed.
-Do not use the old `gh-pages` npm deployment command or publish source files.
-After deployment succeeds, open the site and verify that JavaScript and CSS
-requests use `/assets/`, not the stale `/portfolio/assets/` paths.
+- `src/pages/index.tsx` – the home page content
+- `src/components/` – shared components (navbar, theme switch, cards, skill buttons)
+- `src/config/site.ts` – site name, description, and navigation links
+- `src/layouts/` – page layout
+- `public/` – static assets
 
-### Setup pnpm (optional)
+## Deployment
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+This is a GitHub Pages user site served from the root URL
+<https://nathanjenner.github.io/>, so `base` in `vite.config.ts` is `"/"`.
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
+The **Build and deploy GitHub Pages** workflow
+(`.github/workflows/pages.yml`) runs on pushes to any branch except `gh-pages`,
+on pull requests to `main`, and manually via **workflow_dispatch**. It installs
+with `npm ci`, lints, and builds. Only runs on `main` (not pull requests) upload
+the `dist` directory as the Pages artifact and deploy it to the `github-pages`
+environment. Other branches and pull requests are only linted and built.
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+For this to work, the repository's **Settings → Pages → Build and deployment →
+Source** must be set to **GitHub Actions**.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/frontio-ai/vite-template/blob/main/LICENSE).
+Licensed under the [MIT license](LICENSE).
